@@ -1,0 +1,44 @@
+{
+  "name": "node-tests2",
+  "version": "0.0.0",
+  "description": "Node module for javascript tests and simple functions with es5/es6",
+  "license": "MIT",
+  "repository": "mfdeveloper/node-tests2",
+  "author": {
+    "name": "Felipe",
+    "email": "mfelipeof@gmail.com",
+    "url": "github.com/mfdeveloper"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && npm run build && jest",
+    "build": "babel lib --out-dir=dist --optional=runtime"
+  },
+  "files": [
+    "dist",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "meow": "*",
+    "babel-runtime": "*"
+  },
+  "devDependencies": {
+    "jest": "*",
+    "xo": "*",
+    "babel": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "ignores": [
+      "dist/**"
+    ]
+  }
+}
