@@ -1,5 +1,7 @@
-import fn from '../dist/';
+import fn from '../lib';
 
-test('title', () => {
-	expect(fn('unicorns')).toBe('unicorns & rainbows');
+describe('the simple test cases', () => {
+	it('title', () => {
+		expect(fn('unicorns')).toBe('unicorns & rainbows');
+	});
 });

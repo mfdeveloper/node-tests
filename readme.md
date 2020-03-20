@@ -1,4 +1,4 @@
-# node-tests2 [![Build Status](https://travis-ci.org/mfdeveloper/node-tests2.svg?branch=master)](https://travis-ci.org/mfdeveloper/node-tests2) 
+# node-tests [![Build Status](https://travis-ci.org/mfdeveloper/node-tests.svg?branch=master)](https://travis-ci.org/mfdeveloper/node-tests) 
 
 > Node module for javascript tests and simple functions with es5/es6
 
@@ -6,23 +6,23 @@
 ## Install
 
 ```
-$ npm install --save node-tests2
+$ npm install --save node-tests
 ```
 
 
 ## Usage
 
 ```js
-const nodeTests2 = require('node-tests2');
+const nodeTests = require('node-tests');
 
-nodeTests2('unicorns');
+nodeTests('unicorns');
 //=> 'unicorns & rainbows'
 ```
 
 
 ## API
 
-### nodeTests2(input, [options])
+### nodeTests(input, [options])
 
 #### input
 
@@ -43,22 +43,22 @@ Lorem ipsum.
 ## CLI
 
 ```
-$ npm install --global node-tests2
+$ npm install --global node-tests
 ```
 
 ```
-$ node-tests2 --help
+$ node-tests --help
 
   Usage
-    node-tests2 [input]
+    node-tests [input]
 
   Options
     --foo  Lorem ipsum. [Default: false]
 
   Examples
-    $ node-tests2
+    $ node-tests
     unicorns & rainbows
-    $ node-tests2 ponies
+    $ node-tests ponies
     ponies & rainbows
 ```
 

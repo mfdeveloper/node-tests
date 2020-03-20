@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 'use strict';
 var meow = require('meow');
-var nodeTests2 = require('./');
+var nodeTests = require('.');
 
 var cli = meow([
 	'Usage',
-	'  $ node-tests2 [input]',
+	'  $ node-tests [input]',
 	'',
 	'Options',
 	'  --foo  Lorem ipsum. [Default: false]',
 	'',
 	'Examples',
-	'  $ node-tests2',
+	'  $ node-tests',
 	'  unicorns & rainbows',
-	'  $ node-tests2 ponies',
+	'  $ node-tests ponies',
 	'  ponies & rainbows'
 ]);
 
-console.log(nodeTests2(cli.input[0] || 'unicorns'));
+console.log(nodeTests(cli.input[0] || 'unicorns'));
