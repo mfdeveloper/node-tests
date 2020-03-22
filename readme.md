@@ -1,6 +1,8 @@
 # node-tests [![Build Status](https://travis-ci.org/mfdeveloper/node-tests.svg?branch=master)](https://travis-ci.org/mfdeveloper/node-tests) 
 
-> Node module for javascript tests and simple functions with es5/es6
+> Node module for javascript tests and simple functions with es5/es6, based in [generator-nmx](https://github.com/radiovisual/generator-nmx).
+
+> Use this repository like a *_template_* to create others Node modules projects
 
 
 ## Install
